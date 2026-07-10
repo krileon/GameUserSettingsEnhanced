@@ -1,5 +1,5 @@
 # GameUserSettingsEnhanced
-Unreal Engine plugin that provides blueprint accessible GameUserSettings with blueprint variable saving and loading functionality.
+Unreal Engine plugin that provides blueprint accessible UGameUserSettings with blueprint variable saving and loading functionality.
 
 The plugin is pretty straight forward. Once added to your projects Plugins folder it should compile and be auto-enabled.
 
@@ -17,4 +17,4 @@ This entirely handles the process of loading, applying, saving, validating, etc.
 
 In addition to this you can pass blueprint variables off as console variables (CVar) using the Console Variables variable. Once your blueprint is compiled you can edit this map variable to map a blueprint variable into a CVar value. So for example a blueprint variable named "BloomQuality" can me mapped to "r.BloomQuality". It will automatically handle executing the CVar set behavior for you on load.
 
-This is only tested on Unreal Engine 5.7. If you need it for older versions you'll need to handle editing, compiling, and testing that for yourself.
+This is only tested on Unreal Engine 5.7. If you need it for older or newer versions you'll need to handle editing, compiling, and testing that for yourself.
