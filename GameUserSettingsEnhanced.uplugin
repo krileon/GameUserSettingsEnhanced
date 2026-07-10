@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Game User Settings Enhanced",
+	"Description": "Provides a blueprint accessible UGameUserSettings for adding custom configuration variables entirely from blueprint.",
+	"Category": "Engine",
+	"CreatedBy": "Krileon",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "GameUserSettingsEnhanced",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
