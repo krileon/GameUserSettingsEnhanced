@@ -17,6 +17,6 @@ This entirely handles the process of loading, applying, saving, validating, etc.
 
 In addition to this you can pass blueprint variables off as console variables (CVar) using the Console Variables variable. Once your blueprint is compiled you can edit this map variable to map a blueprint variable into a CVar value. So for example a blueprint variable named "BloomQuality" can be mapped to "r.BloomQuality". It will automatically handle executing the CVar set behavior for you on load.
 
-Notw after adding your blueprint class to your projects settings you'll want to close the editor, delete your GameUserSettings.ini, then relaunch and you should be good to go. If you don't you'll end up with double settings in the ini file since Unreal Engine cached the previous GameUserSettings class already. You only need to do this once though and you're fine.
+Note after adding your blueprint class to your projects settings you'll want to close the editor, delete your GameUserSettings.ini, then relaunch and you should be good to go. If you don't you'll end up with double settings in the ini file since Unreal Engine cached the previous GameUserSettings class already. You only need to do this once though and you're fine.
 
 This is only tested on Unreal Engine 5.7. If you need it for older or newer versions you'll need to handle editing, compiling, and testing that for yourself.
