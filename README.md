@@ -15,8 +15,8 @@ All blueprint variable types are supported. This includes arrays, maps, etc.. th
 
 This entirely handles the process of loading, applying, saving, validating, etc.. your blueprint variables the same way C++ would.
 
-In addition to this you can pass blueprint variables off as console variables (CVar) using the Console Variables variable. Once your blueprint is compiled you can edit this map variable to map a blueprint variable into a CVar value. So for example a blueprint variable named "BloomQuality" can me mapped to "r.BloomQuality". It will automatically handle executing the CVar set behavior for you on load.
+In addition to this you can pass blueprint variables off as console variables (CVar) using the Console Variables variable. Once your blueprint is compiled you can edit this map variable to map a blueprint variable into a CVar value. So for example a blueprint variable named "BloomQuality" can be mapped to "r.BloomQuality". It will automatically handle executing the CVar set behavior for you on load.
 
-Note that due to the nature of how GameUserSettings works you will want to close the editor once you're done adding new variables. Delete your GameUserSetttings.ini file. Then open your editor again. Without doing so may leave behind fragments of the base class settings. No real avoiding this as it's loaded into memory during editor usage as well. This is only an editor quirk and has no real impact on packaged releases.
+Notw after adding your blueprint class to your projects settings you'll want to close the editor, delete your GameUserSettings.ini, then relaunch and you should be good to go. If you don't you'll end up with double settings in the ini file since Unreal Engine cached the previous GameUserSettings class already. You only need to do this once though and you're fine.
 
 This is only tested on Unreal Engine 5.7. If you need it for older or newer versions you'll need to handle editing, compiling, and testing that for yourself.
